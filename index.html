@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongles Parfaits Gabon - Prothésiste Ongulaire Professionnelle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>💅 Ongles Parfaits</h1>
+                <p class="tagline">Prothésiste Ongulaire - Libreville, Gabon</p>
+            </div>
+            <nav class="nav">
+                <a href="#accueil">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#tarifs">Tarifs</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Des Ongles de Rêve à Portée de Main</h2>
+            <p class="hero-description">
+                Prothésiste ongulaire professionnelle au Gabon. Pose de gel, résine, capsules et nail art personnalisé.
+                Réservez directement sur WhatsApp !
+            </p>
+            <a href="https://wa.me/24162088356?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous%20pour%20une%20prestation%20ongulaire" 
+               class="btn-primary" target="_blank">
+                📱 Réserver sur WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <p class="section-subtitle">Cliquez sur un service pour réserver directement sur WhatsApp</p>
+            
+            <div class="services-grid">
+                <div class="service-card" onclick="reserveService('Pose de Gel', '15 000 FCFA', 'Pose complète en gel UV pour des ongles résistants et brillants. Inclut : préparation des ongles, application base coat, pose gel UV couleur au choix, finition top coat brillant. Durée : 1h30.')">
+                    <div class="service-image">
+                        <img src="images/img1.jpg" alt="Pose de Gel" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:70px;\'>💅</div>'">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-icon">💅</span>
+                        <h3>Pose de Gel</h3>
+                        <p>Pose complète en gel UV pour des ongles résistants et brillants</p>
+                        <span class="price">À partir de 15 000 FCFA</span>
+                        <a href="#" class="btn-reserve-service" onclick="event.stopPropagation(); reserveService('Pose de Gel', '15 000 FCFA', 'Pose complète en gel UV pour des ongles résistants et brillants. Inclut : préparation des ongles, application base coat, pose gel UV couleur au choix, finition top coat brillant. Durée : 1h30.'); return false;">
+                            📱 Réserver sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="reserveService('Pose de Résine', '12 000 FCFA', 'Extensions en résine pour longueur et solidité optimales. Inclut : préparation, pose extensions résine acrylique, sculpture et modelage, limage et mise en forme, finition brillante. Durée : 2h.')">
+                    <div class="service-image">
+                        <img src="images/img2.jpg" alt="Pose de Résine" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:70px;\'>✨</div>'">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-icon">✨</span>
+                        <h3>Pose de Résine</h3>
+                        <p>Extensions en résine pour longueur et solidité optimales</p>
+                        <span class="price">À partir de 12 000 FCFA</span>
+                        <a href="#" class="btn-reserve-service" onclick="event.stopPropagation(); reserveService('Pose de Résine', '12 000 FCFA', 'Extensions en résine pour longueur et solidité optimales. Inclut : préparation, pose extensions résine acrylique, sculpture et modelage, limage et mise en forme, finition brillante. Durée : 2h.'); return false;">
+                            📱 Réserver sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="reserveService('Nail Art', '5 000 FCFA', 'Décorations personnalisées, strass, dégradés et motifs selon vos envies. Inclut : création design unique, application décorations (strass, paillettes, autocollants), dessin à main levée, finition protectrice. Durée : 30min à 1h.')">
+                    <div class="service-image">
+                        <img src="images/img3.jpg" alt="Nail Art" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:70px;\'>🎨</div>'">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-icon">🎨</span>
+                        <h3>Nail Art</h3>
+                        <p>Décorations personnalisées, strass, dégradés et motifs</p>
+                        <span class="price">À partir de 5 000 FCFA</span>
+                        <a href="#" class="btn-reserve-service" onclick="event.stopPropagation(); reserveService('Nail Art', '5 000 FCFA', 'Décorations personnalisées, strass, dégradés et motifs selon vos envies. Inclut : création design unique, application décorations (strass, paillettes, autocollants), dessin à main levée, finition protectrice. Durée : 30min à 1h.'); return false;">
+                            📱 Réserver sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="reserveService('Capsules French', '10 000 FCFA', 'French manucure élégante sur capsules ou ongles naturels. Inclut : préparation et soin des ongles, pose capsules si nécessaire, french tips blanche classique, finition gel brillant. Durée : 1h30.')">
+                    <div class="service-image">
+                        <img src="images/img4.jpg" alt="Capsules French" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:70px;\'>💎</div>'">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-icon">💎</span>
+                        <h3>Capsules French</h3>
+                        <p>French manucure élégante sur capsules ou naturel</p>
+                        <span class="price">À partir de 10 000 FCFA</span>
+                        <a href="#" class="btn-reserve-service" onclick="event.stopPropagation(); reserveService('Capsules French', '10 000 FCFA', 'French manucure élégante sur capsules ou ongles naturels. Inclut : préparation et soin des ongles, pose capsules si nécessaire, french tips blanche classique, finition gel brillant. Durée : 1h30.'); return false;">
+                            📱 Réserver sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="reserveService('Manucure Simple', '8 000 FCFA', 'Soin complet des ongles avec vernis semi-permanent longue durée. Inclut : soin des cuticules, limage et mise en forme, massage des mains, pose vernis semi-permanent, finition brillante. Durée : 1h.')">
+                    <div class="service-image">
+                        <img src="images/img5.jpg" alt="Manucure Simple" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:70px;\'>🌸</div>'">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-icon">🌸</span>
+                        <h3>Manucure Simple</h3>
+                        <p>Soin complet des ongles avec vernis semi-permanent</p>
+                        <span class="price">À partir de 8 000 FCFA</span>
+                        <a href="#" class="btn-reserve-service" onclick="event.stopPropagation(); reserveService('Manucure Simple', '8 000 FCFA', 'Soin complet des ongles avec vernis semi-permanent longue durée. Inclut : soin des cuticules, limage et mise en forme, massage des mains, pose vernis semi-permanent, finition brillante. Durée : 1h.'); return false;">
+                            📱 Réserver sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="reserveService('Remplissage', '7 000 FCFA', 'Entretien et remplissage de vos poses gel ou résine existantes. Inclut : ponçage de la base, remplissage zone de repousse, limage et mise en forme, application gel/résine, finition brillante. Durée : 1h.')">
+                    <div class="service-image">
+                        <img src="images/img6.jpg" alt="Remplissage" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:70px;\'>🔄</div>'">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-icon">🔄</span>
+                        <h3>Remplissage</h3>
+                        <p>Entretien et remplissage de vos poses gel ou résine</p>
+                        <span class="price">À partir de 7 000 FCFA</span>
+                        <a href="#" class="btn-reserve-service" onclick="event.stopPropagation(); reserveService('Remplissage', '7 000 FCFA', 'Entretien et remplissage de vos poses gel ou résine existantes. Inclut : ponçage de la base, remplissage zone de repousse, limage et mise en forme, application gel/résine, finition brillante. Durée : 1h.'); return false;">
+                            📱 Réserver sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galerie / Modèles -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Nos Modèles d'Ongles</h2>
+            <p class="section-subtitle">Cliquez sur un modèle pour réserver directement sur WhatsApp</p>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Les cartes seront générées par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tarifs -->
+    <section id="tarifs" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Nos Tarifs</h2>
+            
+            <div class="pricing-table">
+                <div class="pricing-column">
+                    <h3>Prestations de Base</h3>
+                    <ul>
+                        <li>
+                            <span>Manucure simple</span>
+                            <strong>8 000 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>French manucure</span>
+                            <strong>10 000 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>Pose vernis semi-permanent</span>
+                            <strong>9 000 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>Dépose d'ongles</span>
+                            <strong>5 000 FCFA</strong>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-column featured">
+                    <div class="badge">Populaire</div>
+                    <h3>Poses Complètes</h3>
+                    <ul>
+                        <li>
+                            <span>Pose gel UV</span>
+                            <strong>15 000 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>Pose résine</span>
+                            <strong>12 000 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>Pose capsules</span>
+                            <strong>13 000 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>Remplissage gel/résine</span>
+                            <strong>7 000 FCFA</strong>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-column">
+                    <h3>Options & Décors</h3>
+                    <ul>
+                        <li>
+                            <span>Nail art simple</span>
+                            <strong>5 000 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>Nail art complexe</span>
+                            <strong>8 000 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>Strass (par ongle)</span>
+                            <strong>500 FCFA</strong>
+                        </li>
+                        <li>
+                            <span>Dégradé/Ombré</span>
+                            <strong>6 000 FCFA</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-Nous</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Nos Coordonnées</h3>
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>Adresse</strong>
+                            <p>Quartier Batterie IV, Libreville, Gabon</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">📱</span>
+                        <div>
+                            <strong>Téléphone / WhatsApp</strong>
+                            <p>+241 77 XX XX XX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">⏰</span>
+                        <div>
+                            <strong>Horaires</strong>
+                            <p>Lun - Sam : 9h00 - 19h00</p>
+                            <p>Dimanche : Sur rendez-vous</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">💳</span>
+                        <div>
+                            <strong>Paiement</strong>
+                            <p>Espèces, Mobile Money, Virement</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <h3>Prête pour de Beaux Ongles ?</h3>
+                    <p>Réservez votre rendez-vous maintenant sur WhatsApp et profitez de nos prestations professionnelles</p>
+                    <a href="https://wa.me/24162088356?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous%20pour%20une%20prestation%20ongulaire" 
+                       class="btn-whatsapp" target="_blank">
+                        <span class="whatsapp-icon">📱</span>
+                        Réserver sur WhatsApp
+                    </a>
+                    
+                    <div class="social-links">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-link">📘 Facebook</a>
+                            <a href="#" class="social-link">📸 Instagram</a>
+                            <a href="#" class="social-link">📌 TikTok</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ongles Parfaits Gabon - Tous droits réservés</p>
+            <p>Prothésiste Ongulaire Professionnelle à Libreville</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
